@@ -1,0 +1,292 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration-line: none;
+    list-style-type: none;
+    font-family: 'Poppins', sans-serif;
+}
+a{
+    color: white;
+}
+:root{
+    --my-green: rgb(20, 160, 110);
+    --my-black: rgb(40, 45, 50);
+}
+
+/* END OF UNIVERSAL SELECTOR */
+
+header{
+    background-color: var(--my-green);
+    color: white;
+    padding: 0px 10px;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+.logo{
+    width: 5%;
+}
+.logo img{
+    width: 100%;
+    height: 70px;
+    object-fit: cover;
+}
+.name h1{
+    margin-left: 130px;
+}
+
+/* END OF HEADER SECTION */
+
+nav{
+    background-color: var(--my-black);
+    text-align: center;
+    position: sticky;
+    top: 77px;
+    left: 0;
+    z-index: 1000;
+}
+nav ul li{
+    display: inline-block;
+    background-color: var(--my-black);
+    position: relative;
+}
+nav ul li a{
+    display: block;
+    padding: 10px 15px;
+}
+nav ul li a:hover{
+    background-color: var(--my-green);
+    transition: all 0.5s;
+}
+nav ul ul{
+    display: none;
+    position: absolute;
+}
+nav ul li:hover > ul{
+    display: block;
+}
+nav ul ul li{
+    width: 160px;
+}
+nav .click{
+    background-color: var(--my-green);
+}
+
+/* END OF NAVBAR SECTION */
+
+.myHead p{
+    background: linear-gradient(109.6deg, rgb(36, 45, 57) 11.2%, rgb(16, 37, 60) 51.2%, rgb(0, 0, 0) 98.6%);
+    color: white;
+    padding: 5px;
+    margin: 30px;
+    font-size: 25px;
+    border-radius: 5px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+.myForm{
+    padding: 15px;
+    margin: 30px;
+    border-radius: 5px;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+}
+.myForm #principal{
+    width: 20%;
+    height: 40px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+#upload{
+    background-color: var(--my-black);
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+#upload:hover{
+    background-color: var(--my-green);
+    box-shadow: 2px 2px 5px gray;
+    transition: all 0.2s;
+}
+::file-selector-button{
+    background-color: var(--my-black);
+    color: white;
+    border: none;
+    padding: 13px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-right: 30px;
+}
+::file-selector-button:hover{
+    background-color: var(--my-green);
+    box-shadow: 2px 2px 5px gray;
+    transition: all 0.2s;
+}
+.myTable table{
+    width: 95%;
+    margin: 30px auto;
+}
+.myTable th{
+    background-color: whitesmoke;
+    padding: 10px;
+    font-size: 18px;
+    text-align: left;
+}
+.myTable td{
+    padding-left: 5px;
+    padding-top: 5px;
+}
+.myTable a{
+    color: black;
+}
+#delete{
+    background-color: var(--my-black);
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+#delete:hover{
+    background-color: var(--my-green);
+    box-shadow: 2px 2px 5px gray;
+    transition: all 0.2s;
+}
+
+/* END OF PRINCIPAL-IMAGE PAGE */
+
+.myForm #marquee{
+    width: 80%;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+.myNews .post{
+    margin: 30px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+}
+.myNews .post a{
+   float: right;
+}
+.myNews .date{
+    color: red;
+    font-size: 18px;
+}
+
+/* END OF MARQUEE-NEWS PAGE */
+
+.newForm form{
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+    margin: 30px auto;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+}
+.newForm input, textarea{
+    margin-bottom: 10px;
+    padding: 10px;
+}
+.myButton{
+    background-color: var(--my-black);
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 18px;
+    cursor: pointer;
+}
+.myButton:hover{
+    background-color: var(--my-green);
+    box-shadow: 2px 2px 5px gray;
+    transition: all 0.2s;
+}
+#update{
+    background-color: var(--my-black);
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+#update:hover{
+    background-color: var(--my-green);
+    box-shadow: 2px 2px 5px gray;
+    transition: all 0.2s;
+}
+
+/* END OF TEACHERS-POST PAGE */
+
+.account{
+    width: 500px;
+    background-color: #262626;
+    padding: 15px;
+    margin: 150px auto;
+    position: relative;
+}
+.account::after,
+.account::before{
+    content: "";
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    background: linear-gradient(45deg, #FB0094, #0000FF, #00FF00, #FFFF00, #FF0000, #FB0094, #0000FF, #00FF00, #FFFF00, #FF0000);
+    background-size: 400%;
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    z-index: -1;
+    animation: animated-shadow 10s linear infinite alternate;
+}
+.account::after{
+    filter: blur(30px);
+}
+@keyframes animated-shadow{
+    0%{
+        background-position: 0 0;
+    }
+    50%{
+        background-position: 100% 0;
+    }
+    100%{
+        background-position: 0 0;
+    }
+}
+.account h2{
+    color: white;
+    text-align: center;
+    letter-spacing: 2px;
+}
+.account input{
+    width: 95%;
+    border: none;
+    outline: none;
+    padding: 15px;
+    margin-top: 15px;
+    font-size: 18px;
+    border-radius: 5px;
+}
+.account-btn{
+    background-color: var(--my-black);
+    color: white;
+    padding: 10px;
+    font-size: 18px;
+    cursor: pointer;
+}
+.account-btn:hover{
+    background-color: var(--my-green);
+    transition: all 0.2s;
+}
+
+/* END OF ADMIN-ACCOUNT PAGE */

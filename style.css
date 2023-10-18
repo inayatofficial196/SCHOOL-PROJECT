@@ -1,0 +1,905 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration-line: none;
+    list-style-type: none;
+    font-family: 'Poppins', sans-serif;
+}
+a{
+    color: white;
+}
+:root{
+    --my-green: rgb(20, 160, 110);
+    --my-black: rgb(40, 45, 50);
+}
+
+/* END OF UNIVERSAL SELECTOR */
+
+header{
+    background-color: var(--my-green);
+    color: white;
+    padding: 0px 10px;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+.logo{
+    width: 5%;
+}
+.logo img{
+    width: 100%;
+    height: 70px;
+    object-fit: cover;
+}
+.name h1{
+    margin-left: 130px;
+}
+
+/* END OF HEADER SECTION */
+
+nav{
+    background-color: var(--my-black);
+    text-align: center;
+    position: sticky;
+    top: 77px;
+    left: 0;
+    z-index: 1000;
+}
+nav ul li{
+    display: inline-block;
+    background-color: var(--my-black);
+    position: relative;
+}
+nav ul li a{
+    display: block;
+    padding: 10px 15px;
+}
+nav ul li a:hover{
+    background-color: var(--my-green);
+    transition: all 0.5s;
+}
+nav ul ul{
+    display: none;
+    position: absolute;
+}
+nav ul li:hover > ul{
+    display: block;
+}
+nav ul ul li{
+    width: 160px;
+}
+nav .click{
+    background-color: var(--my-green);
+}
+
+/* END OF NAVBAR SECTION */
+
+.about-home{
+    display: flex;
+}
+.about-principal{
+    width: 70%;
+    margin: 20px 40px;
+}
+.about-principal p{
+    margin: 10px 0px;
+    text-align: justify;
+}
+.about-btn{
+    background-color: var(--my-black);
+    border-radius: 6px;
+    border: 0;
+}
+.about-btn a{
+    display: block;
+    padding: 10px;
+}
+.about-btn:hover{
+    background-color: var(--my-green);
+    box-shadow: 2px 2px 5px gray;
+    transition: all 0.5s;
+}
+.home-img{
+    width: 30%;
+    margin: 20px 40px 0px 0px;
+}
+.home-img img{
+    width: 100%;
+    height: 385px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.home-img h5{
+    text-align: center;
+}
+
+/* END OF HOME ABOUT SECTION */
+
+.services hr{
+    width: 170px;
+    margin: auto;
+}
+.services h1{
+    text-align: center;
+}
+.services-box{
+    width: 80%;
+    height: 150px;
+    margin: 30px auto;
+    border-radius: 5px;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+    display: flex;
+}
+.services-img{
+    width: 25%;
+}
+.services-img img{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.services-text{
+    width: 75%;
+    padding: 10px;
+    text-align: justify;
+}
+
+/* END OF SERVICES SECTION */
+
+.teacher-home hr{
+    width: 180px;
+    margin: auto;
+}
+.teacher-home h1{
+    text-align: center;
+}
+.teacher-row{
+    width: 80%;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+}
+.teacher-box{
+    padding: 10px;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+}
+.teacher-box img{
+    width: 100%;
+    height: 350px;
+    object-fit: contain;
+    border-radius: 5px;
+}
+.teacher-box small{
+    font-family: candara;
+    font-weight: bold;
+}
+.teacher-box h3{
+    color: #F70787;
+}
+.teacher-social{
+    text-align: center;
+}
+.teacher-social li{
+    border: 1px solid var(--my-green);
+    display: inline-block;
+    margin: 10px 2px;
+    border-radius: 3px;
+}
+.teacher-social li a{
+    color: var(--my-green);
+    font-size: 25px;
+    display: block;
+    padding: 0px 6px;
+}
+.teacher-social li:hover{
+    background-color: var(--my-green);
+    box-shadow: 1px 1px 5px 1px darkgray;
+    transition: all 0.5s;
+}
+.teacher-social li a:hover{
+    color: white;
+    transition: all 0.5s;
+}
+.teacher-btn{
+    background-color: var(--my-black);
+    border-radius: 6px;
+    border: 0;
+    display: block;
+    margin: auto;
+}
+.teacher-btn a{
+    display: block;
+    padding: 8px 10px;
+    font-size: 18px;
+}
+.teacher-btn:hover{
+    background-color: var(--my-green);
+    box-shadow: 2px 2px 5px gray;
+    transition: all 0.5s;
+}
+
+/* END OF HOME TEACHER SECTION */
+
+.admission-box{
+    width: 50%;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+}
+.admission-box h3{
+    padding-bottom: 10px;
+}
+.admission-box p{
+    text-align: justify;
+}
+.admission-btn{
+    background-color: var(--my-black);
+    border-radius: 6px;
+    border: 0;
+    display: block;
+    margin: 20px auto 0px auto;
+}
+.admission-btn a{
+    display: block;
+    padding: 8px 10px;
+    font-size: 18px;
+}
+.admission-btn:hover{
+    background-color: var(--my-green);
+    box-shadow: 2px 2px 5px gray;
+    transition: all 0.5s;
+}
+
+/* END OF HOME ADMISSION SECTION */
+
+.news-home marquee{
+    padding: 10px;
+    margin: 10px 20px;
+    font-size: 25px;
+    font-family: candara;
+    font-weight: bold;
+    border-radius: 50px;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+    animation: animate 5s linear infinite;
+}
+@keyframes animate{
+    0% {
+        color: red;
+    }
+    25% {
+        color: blue;
+    }
+    50% {
+        color: green;
+    }
+    75% {
+        color: brown;
+    }
+    100% {
+        color: purple;
+    }
+}
+
+/* END OF HOME NEWS SECTION */
+
+.footer{
+    background-color: rgb(27, 27, 27);
+    color: white;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+.footer-left{
+    width: 50%;
+    border-right: 1px solid white;
+    padding-right: 50px;
+}
+.footer-left p{
+    text-align: justify;
+}
+.footer-social li{
+    background-color: white;
+    display: inline-block;
+    margin-top: 10px;
+    border-radius: 50%;
+}
+.footer-social li a{
+    color: black;
+    font-size: 20px;
+    display: block;
+    padding: 4px 10px;
+}
+.footer-social li:hover{
+    background-color: var(--my-green);
+    transition: all 0.5s;
+}
+.footer-social li a:hover{
+    color: white;
+    transition: all 0.5s;
+}
+.footer-right{
+    width: 40%;
+}
+.footer-news li i{
+    margin-right: 10px;
+}
+.footer-news li a:hover{
+    color: var(--my-green);
+    transition: all 0.5s;
+}
+.news-btn{
+    background-color: white;
+    border-radius: 5px;
+    border: 0;
+    margin-top: 10px;
+}
+.news-btn a{
+    color: black;
+    display: block;
+    padding: 8px 6px;
+}
+.news-btn:hover{
+    background-color: var(--my-green);
+    transition: all 0.5s;
+}
+.news-btn a:hover{
+    color: white;
+    transition: all 0.5s;
+}
+
+/* END OF FOOTER SECTION */
+
+.copyright{
+    background-color: var(--my-black);
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+/* END OF COPYRIGHT SECTION */
+/************************************************** END OF HOME PAGE **************************************************/
+
+.about-us{
+    display: flex;
+}
+.about-text{
+    width: 70%;
+    margin: 20px 40px;
+}
+.about-text h1{
+    color: white;
+    background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 25px;
+    padding: 5px;
+    text-align: center;
+    border-radius: 3px;
+}
+.about-text p{
+    margin: 10px 0px;
+    text-align: justify;
+}
+.contact-btn{
+    background-color: var(--my-black);
+    border-radius: 6px;
+    border: 0;
+}
+.contact-btn a{
+    display: block;
+    padding: 10px;
+}
+.contact-btn:hover{
+    background-color: var(--my-green);
+    box-shadow: 2px 2px 5px gray;
+    transition: all 0.5s;
+}
+.about-img{
+    width: 30%;
+    margin: 20px 40px 0px 0px;
+}
+.about-img img{
+    width: 100%;
+    height: 385px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.about-img h5{
+    text-align: center;
+}
+
+/* END OF ABOUT SECTION */
+
+.rules hr{
+    width: 130px;
+    margin: auto;
+}
+.rules h1{
+    text-align: center;
+}
+.rules-box{
+    width: 90%;
+    padding: 20px;
+    margin: 30px auto;
+    text-align: justify;
+    border-radius: 10px;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+}
+.rules-box i{
+    color: var(--my-green);
+}
+
+/* END OF OUR RULES SECTION */
+/************************************************** END OF ABOUT-US PAGE **************************************************/
+
+.gallery{
+    margin: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-gap: 20px;
+}
+.gallery img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.gallery img:hover{
+    border: 1px solid var(--my-green);
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+
+/* END OF GALLERY SECTION  */
+/************************************************** END OF GALLERY PAGE **************************************************/
+
+.teacher{
+    width: 90%;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-gap: 20px;
+}
+.teach-box{
+    padding: 10px;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+}
+.teach-box img{
+    width: 100%;
+    height: 400px;
+    object-fit: contain;
+    border-radius: 5px;
+}
+.teach-box small{
+    font-family: candara;
+    font-weight: bold;
+}
+.teach-box h3{
+    color: #F70787;
+}
+.teach-social{
+    text-align: center;
+}
+.teach-social li{
+    border: 1px solid var(--my-green);
+    display: inline-block;
+    margin: 10px 2px;
+    border-radius: 3px;
+}
+.teach-social li a{
+    color: var(--my-green);
+    font-size: 25px;
+    display: block;
+    padding: 0px 6px;
+}
+.teach-social li:hover{
+    background-color: var(--my-green);
+    box-shadow: 1px 1px 5px 1px darkgray;
+    transition: all 0.5s;
+}
+.teach-social li a:hover{
+    color: white;
+    transition: all 0.5s;
+}
+
+/* END OF TEACHERS SECTION */
+/************************************************** END OF TEACHERS PAGE **************************************************/
+
+.events{
+    margin: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 10px;
+}
+.month-box table{
+    background-color: #F8F8FF;
+}
+.month-box caption{
+    background-color: var(--my-black);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+.month-box tr{
+    text-align: center;
+    font-size: 18px;
+}
+.month-box th, td{
+    border: 1px solid black;
+    width: 50px;
+}
+.events-box li{
+    background-color: var(--my-green);
+    color: white;
+    margin: 10px;
+    padding: 2px 20px;
+    border-radius: 8px;
+}
+.sunday{
+    color: red;
+}
+
+/* END OF EVENTS SECTION */
+/************************************************** END OF EVENTS PAGE **************************************************/
+
+.news{
+    display: flex;
+}
+.news-list{
+    width: 70%;
+}
+.news-box{
+    margin: 30px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+}
+.news-box .date{
+    color: red;
+}
+.doc-box{
+    width: 30%;
+    height: 450px;
+    margin: 30px 30px 30px 0px;
+    padding: 20px;
+    overflow: auto;
+    border-radius: 5px;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+}
+.doc-box i{
+    color: var(--my-green);
+    margin-right: 10px;
+}
+.doc-box a{
+    color: black;
+}
+.doc-box a:hover{
+    font-weight: bold;
+    transition: all 0.5s;
+}
+.doc-box::-webkit-scrollbar{
+    width: 10px;
+}
+.doc-box::-webkit-scrollbar-track{
+    border-radius: 10px;
+    background-color: #F5F5F5;
+    box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+.doc-box::-webkit-scrollbar-thumb{
+    border-radius: 20px;
+    background-color: var(--my-green);
+}
+
+/* END OF NEWS SECTION */
+/************************************************** END OF NEWS PAGE **************************************************/
+
+.contact-us{
+    width: 90%;
+    margin: 20px auto;
+    display: flex;
+}
+.contact-text{
+    width: 40%;
+    color: white;
+    padding: 20px;
+    border-radius: 10px 0px 0px 10px;
+    background: linear-gradient(109.6deg, rgb(36, 45, 57) 11.2%, rgb(16, 37, 60) 51.2%, rgb(0, 0, 0) 98.6%);
+}
+.contact-text p{
+    font-size: 18px;
+    text-align: justify;
+}
+.contact-details{
+    margin: 20px auto;
+}
+.contact-details li{
+    font-size: 18px;
+    padding: 5px 0px;
+}
+.contact-details li i{
+    background-color: var(--my-green);
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+.contact-details li span{
+    font-weight: bold;
+}
+.contact-details li a:hover{
+    color: var(--my-green);
+    transition: all 0.5s;
+}
+.contact-social{
+    text-align: center;
+}
+.contact-social li{
+    display: inline-block;
+}
+.contact-social li i{
+    background-color: var(--my-green);
+    padding: 10px;
+    margin: 0px 5px;
+    font-size: 25px;
+    border-radius: 22%;
+}
+.contact-social li i:hover{
+    background-color: white;
+    color: black;
+    transition: all 1s;
+}
+.contact-form{
+    width: 60%;
+    padding: 20px;
+    border-radius: 0px 10px 10px 0px;
+    background-color: #ECF0F3;
+}
+.contact-form span{
+    font-size: 22px;
+    font-weight: bold;
+}
+.contact-form input, textarea{
+    background: none;
+    border: none;
+    outline: none;
+    width: 47%;
+    padding: 20px;
+    margin: 15px 15px 0px 0px;
+    font-size: 18px;
+    border-radius: 20px;
+    box-shadow: inset 8px 8px 8px #CBC3D1, inset -8px -8px 8px #FFFFFF;
+}
+.contact-form textarea{
+    width: 97%;
+    height: 150px;
+    resize: none;
+}
+.contact-form .submit-btn{
+    width: 96%;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 50px;
+    cursor: pointer;
+    color: white;
+    background-color: var(--my-black);
+    box-shadow: 3px 3px 8px #B1B1B1, -3px -3px 8px #FFFFFF;
+}
+.contact-form .submit-btn:hover{
+    background-color: var(--my-green);
+    transition: all 1s;
+}
+
+/* END OF CONTACT SECTION */
+/************************************************** END OF CONTACT-US PAGE **************************************************/
+
+.admission-rules{
+    width: 95%;
+    padding: 20px;
+    margin: 30px auto;
+    text-align: justify;
+    line-height: 30px;
+    border-radius: 5px;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+}
+.admission-rules i{
+    color: var(--my-green);
+}
+
+/* END OF ADMISSION RULES SECTION */
+/********************************************** END OF ADMISSION-RULES PAGE **********************************************/
+
+.fee-structure table{
+    width: 90%;
+    margin: 20px auto;
+}
+.fee-structure caption{
+    background: linear-gradient(109.6deg, rgb(36, 45, 57) 11.2%, rgb(16, 37, 60) 51.2%, rgb(0, 0, 0) 98.6%);
+    color: white;
+    padding: 5px;
+    font-size: 22px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+.fee-structure td{
+    border: 0;
+    padding: 5px;
+    font-size: 18px;
+    text-align: center;
+}
+.even-row{
+    background-color: whitesmoke;
+}
+
+/* END OF FEE STRUCTURE SECTION */
+/************************************************** END OF FEE-STRUCTURE PAGE **************************************************/
+
+.admission-form{
+    width: 95%;
+    margin: 30px auto;
+}
+.form-head{
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+    display: flex;
+}
+.form-img img{
+    width: 120px;
+    height: 120px;
+    border-radius: 3px;
+    object-fit: contain;
+}
+#label-img{
+    background-color: rgb(100, 100, 250);
+    color: white;
+    padding: 5px;
+    text-align: center;
+    border-radius: 3px;
+    display: block;
+    width: 120px;
+    cursor: pointer;
+}
+#label-img:hover{
+    background-color: var(--my-green);
+    box-shadow: 2px 2px 5px gray;
+    transition: all 0.5s;
+}
+#profile-file, #fee-file{
+    display: none;
+}
+.form-text{
+    margin: 0px 30px;
+}
+.form-text h2{
+    color: white;
+    background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 25px;
+    padding: 5px;
+    text-align: center;
+    border-radius: 3px;
+}
+.form-text p{
+    text-align: justify;
+}
+.personal-info{
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+}
+.personal-info fieldset{
+    border: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+.personal-info legend{
+    color: var(--my-green);
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 2px solid var(--my-green);
+}
+.personal-info div{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.personal-info input{
+    width: 90%;
+    height: 40px;
+    padding: 5px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+.personal-info input:focus{
+    border: none;
+    outline: none;
+    box-shadow: 0px 4px 8px -2px lightskyblue, 0px 0px 0px 1px lightblue;
+}
+.academic-info{
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+}
+.academic-info fieldset{
+    border: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.academic-info legend{
+    color: var(--my-green);
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 2px solid var(--my-green);
+}
+.academic-info div{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.academic-info input{
+    width: 90%;
+    height: 40px;
+    padding: 5px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+.academic-info input:focus{
+    border: none;
+    outline: none;
+    box-shadow: 0px 4px 8px -2px lightskyblue, 0px 0px 0px 1px lightblue;
+}
+#btn1, #btn2{
+    background-color: var(--my-black);
+    color: white;
+    border: none;
+    width: 150px;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#btn1:hover{
+    background-color: var(--my-green);
+    box-shadow: 2px 2px 5px gray;
+    transition: all 0.5s;
+}
+#btn2:hover{
+    background-color: var(--my-green);
+    box-shadow: 2px 2px 5px gray;
+    transition: all 0.5s;
+}
+
+/* END OF ADMISSION FORM SECTION */
+/************************************************** END OF ADMISSION-FORM PAGE **************************************************/
+
+.status{
+    color: var(--my-green);
+    float: right;
+}
+#download-btn{
+    background-color: var(--my-black);
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#download-btn:hover{
+    background-color: var(--my-green);
+    box-shadow: 2px 2px 5px gray;
+    transition: all 0.5s;
+}
+
+/* END OF PROFILE SECTION */
+/************************************************ END OF PROFILE PAGE ******************************************/

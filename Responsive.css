@@ -1,0 +1,692 @@
+/************************************** Start of Humbarger icon ********************************* */
+
+.checkbtn{
+    color: white;
+    font-size: 35px;
+    float: right;
+    margin: -64px 20px 0px 0px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+
+/******************************************* Start of Humbarger ********************************* */
+
+@media (min-width: 310px) and (max-width: 1200px){
+
+    .checkbtn{
+        display: block;
+    }
+    nav ul{
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        width: 25%;
+        height: 80vh;
+        background: #2f3640;
+        top: 8;
+        right: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav li{
+        padding: 5px 0px;
+    }
+    #check:checked ~ ul{
+        right: 0;
+    }
+    .footer{
+        display: grid;
+    }
+    .footer-left{
+        order: 2;
+        width: 90%;
+        border-right: none;
+        text-align: justify;
+    }
+    .footer-right{
+        order: 1;
+        width: 90%;
+        padding: 10px;
+        border-bottom: 2px solid white;
+        margin: 5px;
+        text-align: justify;
+    }
+}
+
+/* **********************************End of Humberger and footer ***************************** */
+
+/* ****************************** Extra large container width with start***********************/
+
+ @media (min-width: 992px) and (max-width: 1200px){
+
+    .logo{
+        width: 65px;
+        margin-left: 3px;
+    }
+    header .name{
+        font-size: 12px;
+    }
+
+/*********************************** This is the start Home page. **********************************/
+
+ .about-principal{
+        width: 60%;
+    }
+    .home-img{
+        width: 40%;
+    }
+    .home-img img{
+        height: 490px;
+    }
+    .services-box{
+        width: 90%;
+        height: 180px;
+    }
+    .services-img{
+        width: 30%;
+    }
+    .services-box img{
+        height: 180px;
+    }
+    .admission-box{
+        width: 80%;
+    }
+
+/*************************************** The End of Home page***************************** */
+
+/**************************************** Start of About-us page  ************************************/
+
+    .about-text{
+        width: 55%;
+    }
+    .about-img{
+        width: 45%;
+    }
+    .about-img img{
+        width: 100%;
+        height: 550px;
+    }
+
+/************************************** End of About-us page ********************************** */
+
+/************************************* Contact us start ************************************ */
+
+    .contact-us{
+        display: block;
+        margin: 10px;
+    }
+    .contact-text{
+        width: 100%;
+        margin: 10px auto;
+    }
+    .contact-form{
+        width: 100%;
+        margin: 10px auto;
+    }
+
+/************************************* Contact page END ************************************* */
+
+/************************************* Start of addmission form ***************************** */
+  
+    .text-tag h1{
+        font-size: 22px;
+        margin: 5px;
+    }
+    .text-tag h2{
+        font-size: 19px;
+        margin: 5px;
+    }
+    #btn1, #btn2{
+        width: 28%;
+        padding: 10px;
+        cursor: pointer;
+        background-color: var(--my-black);
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 18px;
+        margin: 0px 10px 10px 0px;
+    }
+
+/********************************** End of addission form ******************************** */
+
+/************************************************** Start of event ****************************************** */
+
+    .month-box{
+        margin: 10px auto; 
+    }
+ }
+                                            /* End of step 01 */
+/* **********************************  Mediam container width start ********************************/
+
+ @media (min-width: 768px) and (max-width: 992px){
+   
+    .logo{
+        width: 65px;
+        margin-left: 3px;
+    }
+    header .name{
+        font-size: 9px;
+    }
+
+/*********************************** This is the start Home page. **********************************/
+
+    .about-home{
+        margin: 5px auto;
+        display: grid;
+    }
+    .about-principal{
+        margin: 5px auto;
+        width: 80%;
+        order: 2;
+    }
+    .home-img{
+        margin: 5px auto;
+        width: 80%;
+        order: 1;
+    }
+    .home-img img{
+        width: 100%;
+        height: 490px;
+    }
+    .services-box{
+        width: 90%;
+        height: 220px;
+    }
+    .services-img{
+        margin: auto 5px;
+        width: 20%;
+    }
+    .services-box img{
+        height: 180px;
+    }
+    .admission-box{
+        width: 70%;
+    }
+
+/***************************************** End of home page  **************************************/
+
+/*********************************** This is the start About-us page. **********************************/
+
+    .about-us{
+        display: flex;
+        flex-direction: column;
+    }
+    .about-text h1{
+        font-size: 22px;
+    }
+    .about-text{
+        width: 90%;
+        margin: 5px auto;
+        order: 2;
+    }
+    .about-img{
+        width: 90%;
+        margin: 7px auto;
+    }
+    .about-img img{
+        width: 100%;
+        order: 1;
+    }
+
+/******************************************* The End of About-us page************************************* */
+
+/******************************************* Contact us is start **************************************** */
+
+    .contact-us{
+        display: block;
+        margin: 10px;
+    }
+    .contact-text{
+        width: 100%;
+        margin: 10px auto;
+    }
+    .contact-form{
+        width: 100%;
+        margin: 10px auto;
+    }
+
+/***************************************** Contact us page End ************************************* */
+
+/***************************************** start of addmision form ************************************/
+
+    .text-tag h1{
+        font-size: 17px;
+        margin: 5px;
+    }
+    .text-tag h2{
+        font-size: 18px;
+        margin: 5px;
+    }
+    .text-tag span{
+        font-size: 17px;
+        margin: 5px;
+        text-align: left;
+    }
+    #btn1, #btn2{
+        width: 28%;
+        padding: 10px;
+        cursor: pointer;
+        background-color: var(--my-black);
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 18px;
+        margin: 0px 10px 10px 0px;
+    }
+
+/****************************************** This is the addmision form end ************************/
+
+/************************************************** Start of event ****************************************** */
+
+    .month-box{
+        margin: 10px auto; 
+    }
+ }
+
+                                                /* The End Of step 02 */
+/******************************************** Small container width start ****************************/
+
+ @media (min-width: 576px) and (max-width: 768px){
+    
+    .logo{
+        width: 65px;
+        margin-left: 3px;
+    }
+    header .name{
+        display: none;
+    }
+
+/************************************************** Start of Home page ********************************/
+
+    .about-home{
+        margin: 5px auto;
+        display: grid;
+    }
+    .about-principal{
+        margin: 5px auto;
+        width: 90%;
+        order: 2;
+    }
+    .home-img{
+        margin: 5px auto;
+        width: 90%;
+        order: 1;
+    }
+    .home-img img{
+        width: 100%;
+        height: 490px;
+    }
+    .services-box{
+        display: grid;
+        width: 90%;
+        min-height: 440px;
+    }
+    .services-img{
+        margin: 0px auto;
+        width: 100%;
+        order: 1;
+        
+    }
+    .services-text{
+        order: 2;
+        width: 100%;
+    }
+    .services-box img{
+        width: 100%;
+        height: 180px;
+        order: 1;
+    }
+    .admission-box{
+        width: 90%;
+    }
+
+/******************************************************** End of haome page********************* */
+
+/********************************************* Start container of about-us page************************** */
+    .about-us{
+        display: flex;
+        flex-direction: column;
+    }
+    .about-text h1{
+        font-size: 22px;
+    }
+    .about-text{
+        width: 90%;
+        margin: 5px auto;
+        order: 2;
+    }
+    .about-img{
+        width: 90%;
+        margin: 7px auto;
+    }
+    .about-img img{
+        width: 100%;
+        order: 1;
+    }
+
+/*************************************************** End of about-us  *****************************/
+
+/************************************************* Contact us start ****************************** */
+
+    .contact-us{
+        display: block;
+        margin: 10px;
+    }
+    .contact-text{
+        width: 100%;
+        margin: 10px auto;
+    }
+    .contact-form{
+        width: 100%;
+        margin: 10px auto;
+    }
+    .contact-form input{
+        width: 100%;
+        height: 50px;
+        margin: 5px auto;
+    }
+
+/************************************************** Contact us is End **************************** */
+
+/*************************************************** This is the addimision start******************* */
+
+    .text-tag h1{
+        font-size: 17px;
+        text-align: left;
+    }
+    .text-tag h2{
+        font-size: 16px;
+        text-align: left;
+    }
+    .frist-span{
+        margin: 1px 150px 0px 0px;
+    }
+    .last-span{
+        display: none;
+    }
+    .hero{
+        margin: 0px 10px;
+    }
+    .form-head{
+        display: flex;
+        flex-direction: column;
+    }
+    .head-img{
+        order: 2;
+        margin: 10px;
+    }
+    .head-text{
+        order: 1;
+        width: 100%;
+    }
+    #img-lable{
+        display: block;
+        width: 130px;
+        background-color: black;
+        color: #fff;
+        padding: 6px;
+        margin: 10px auto;
+        cursor: pointer;
+        border-radius: 8px;
+        font-size: 14px;
+    }
+    #img-lable:hover{
+        background-color: var(--my-green);
+        box-shadow: 2px 2px 5px gray;
+        transition: all 0.5s;
+        
+    }
+    #btn1, #btn2{
+        width: 28%;
+        padding: 10px;
+        cursor: pointer;
+        background-color: var(--my-black);
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 18px;
+        margin: 0px 10px 10px 0px;
+    }
+
+/********************************************* This is the addmision end *********************************/
+
+/************************************************** Start of event ****************************************** */
+
+    .month-box{
+        margin: 10px auto; 
+    }    
+ }
+
+                                                /* End of step 03 */
+ /* ***************************************large small conatiner width ************************/
+
+ @media (max-width: 576px){
+
+    .checkbtn {
+        display: block;
+     }
+    nav ul{
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        height: 58vh;
+        background: #2f3640;
+        top: 8;
+        right: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    .drop-down{
+        position: absolute;
+        right: 277px;
+        top: 5px;
+        color: green;
+    }
+    .sub-drop-down{
+        position: fixed;
+        right: 0px;
+        top: 0px;
+        color: green;
+    }
+    nav li {
+        padding: 5px 0px;
+    }
+    #check:checked ~ ul{
+        right: 0;      
+    }
+    .logo{
+        width: 65px;
+        margin-left: 3px;
+    }
+    header .name{
+        display: none;
+    }
+    .home-img h5{
+        display: none;
+    }
+
+/*************************************** Start of Home page*************************************/
+
+    .about-home{
+        margin: 5px auto;
+        display: grid;
+    }
+    .about-principal{
+        margin: 5px auto;
+        width: 90%;
+        order: 2;
+        margin-bottom: 5px;
+    }
+    .home-img{
+        margin: 5px auto;
+        width: 90%;
+        order: 1;
+    }
+    .home-img img{
+        width: 100%;
+        height: 490px;
+    }
+    .services-box{
+        display: grid;
+        width: 90%;
+        min-height: 455px;
+    }
+    .services-img{
+        margin: 0px auto;
+        width: 100%;
+        order: 1;   
+    }
+    .services-text{
+        order: 2;
+        width: 100%;
+    }
+    .services-box img{
+        width: 100%;
+        height: 180px;
+        order: 1;
+    }
+    .admission-box{
+        width: 90%;
+    }
+
+/********************************************** End of Home page********************************* */
+
+/**************************************** Start of About-us container **************************/
+
+    .about-us{
+        display: flex;
+        flex-direction: column;
+    }
+    .about-text h1{
+        font-size: 22px;
+    }
+    .about-text{
+        width: 90%;
+        margin: 5px auto;
+        order: 2;
+    }
+    .about-img{
+        width: 90%;
+        margin: 7px auto;
+    }
+    .about-img img{
+        width: 100%;
+        order: 1;
+    }
+
+/***************************************************** End of about-us **********************************/
+
+/********************************************** Start of contact us ******************************************************* */
+
+    .contact-us{
+        display: block;
+        margin: 8px;
+    }
+    .contact-text{
+        width: 100%;
+        margin: 10px auto;
+    }
+    .contact-form{
+        width: 100%;
+        margin: 10px auto;
+    }
+    .contact-form input{
+        width: 100%;
+        height: 50px;
+        margin: 5px auto;
+    }
+    .contact-details li{
+        font-size: 15px;
+        padding: 5px 0px;
+    }
+    .contact-social li i{
+        background-color: var(--my-green);
+        padding: 10px;
+        margin: 0px 5px;
+        font-size: 20px;
+        border-radius: 22%;
+    }
+
+/******************************************** addmision Form start   *****************************/
+  
+    .text-tag h1{
+        font-size: 17px;
+        text-align: left;
+    }
+    .text-tag h2{
+        font-size: 16px;
+        text-align: left;
+    }
+    .frist-span{
+        margin: 1px 90px 0px 0px;
+    }
+    .last-span{
+        display: none;
+    }
+    .hero{
+        margin: 0px 10px;
+    }
+    .form-head{
+        display: flex;
+        flex-direction: column;
+    }
+    .head-img{
+        order: 2;
+        margin: 10px;
+    }
+    .head-text{
+        order: 1;
+        width: 100%;
+    }
+    #img-lable{
+        display: block;
+        width: 120px;
+        background-color: black;
+        color: #fff;
+        padding: 6px;
+        margin: 10px auto;
+        cursor: pointer;
+        border-radius: 8px;
+        font-size: 14px;
+    }
+    #img-lable:hover{
+        background-color: var(--my-green);
+        box-shadow: 2px 2px 5px gray;
+        transition: all 0.5s;   
+    }
+    .last-span{
+        display: none;
+    }
+    .card img{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin-top: 60px;
+        object-fit: cover;
+    }
+    #btn1, #btn2{
+        width: 28%;
+        text-align: center;
+        padding: 10px;
+        cursor: pointer;
+        background-color: var(--my-black);
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 18px;
+        margin: 0px 10px 10px 0px;
+    }
+
+/***************************************** Start of Event ************************************** */
+
+    .month-box{
+        margin: 10px auto; 
+    }
+ }
+
+/*************************************************** End of step 04************************************** */
